@@ -1,0 +1,16 @@
+@font-face {
+  font-family: SFPro;
+  src: url(/fonts/SFPRODISPLAYREGULAR.OTF);
+}
+
+body {
+  font-family: SFPro;
+  background: linear-gradient(180deg, #E8FFED 20.19%, #FFFFFF 50%, #E8FFED 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100vw;
+
+}

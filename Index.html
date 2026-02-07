@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invesperia</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="p-4">
+    <header class="flex  items-center gap-3 mt-5 mb-14">
+        <img src="/images/Logo.png" alt="">
+        <h1 class="text-[28px] font-bold text-[#1C1C1C]">Invesperia</h1>
+    </header>
+    <h1 class="text-[28px] font-bold text-[#1C1C1C] mb-4">Login authorization</h1>
+    <p class="text-[18px] font-medium text-[#5F6B66]">Haven't joined yet? <a href="#"
+            class="font-semibold underline text-[#2E7D4F]">Enroll Now</a></p>
+    <form action="" class="my-7 text-[16px] font-normal text-[#5F6B66] flex flex-col gap-3">
+        <div>
+
+            <label for="">Mobile Number</label>
+            <div class="flex items-center gap-2">
+                <select name="" id="" class="border border-gray-300 rounded-xl w-[20%] h-[56px] bg-white text-[18px]">
+                    <option value="+62">+62</option>
+                </select>
+                <input class="border border-gray-300 rounded-xl inline w-[78%] h-[56px]  bg-white px-5 py-4 text-[18px]"
+                    placeholder="Mobile Number" type="text">
+            </div>
+        </div>
+
+        <div class="">
+            <label for="">Password</label>
+            <div class="relative">
+                <input class="border border-gray-300 rounded-xl w-full h-[56px]  bg-white pl-5 pr-10 py-4 text-[18px]"
+                    placeholder="Enter your password" type="password">
+                <img class="absolute top-0 bottom-0 my-auto right-3" src="/images/icons/eye.png" alt="">
+            </div>
+        </div>
+
+        <div class="mt-2 mb-5">
+            <p class="text-[16px] text-center text-black mb-2">Security Verification</p>
+
+            <div class="border border-gray-300 shadow rounded-xl flex items-center justify-between pl-5">
+                <div class="flex items-center gap-3">
+                    <input class="w-6 h-6 accent-[#1F6F43]" type="checkbox" id="isrobot" name="isrobot" value="">
+                    <label for="isrobot">I’m not a robot</label>
+                </div>
+                <img class="p-2" src="/images/reCAPTCHA.png" alt="">
+            </div>
+        </div>
+
+        <button class="bg-gradient-to-r from-[#1F6F43] via-[#2E8F5A] to-[#3FA66B] h-[56px] rounded-[30px] text-white">
+            Log in to Account
+        </button>
+    </form>
+</body>
+
+<footer class="mt-7">
+    <p class="text-center text-[14px] font-normal text-[#1C1C1C]">🔒 Encrypted & secure data</p>
+</footer>
+
+</html>
