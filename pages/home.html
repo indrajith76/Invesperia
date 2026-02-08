@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invesperia</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="p-4 homeBg pb-36">
+    <header class="flex  items-center gap-3 mt-5 mb-14">
+        <img src="/images/Logo.png" alt="">
+        <h1 class="text-[28px] font-bold text-[#1C1C1C]">Invesperia</h1>
+    </header>
+
+    <nav class="fixed bottom-0 right-0 left-0 mx-auto bg-white border-t border-gray-300 w-full z-40">
+        <ul class="flex items-center justify-center">
+            <li class="flex flex-col items-center py-2 relative">
+                <div class="w-[40%] h-[3px] bg-[#1F6F43] absolute top-0"></div>
+                <img src="/images/icons/house.fill.png" alt="">
+                <p class="text-[15px] text-[#1F6F43]">Home</p>
+            </li>
+            <li class="flex flex-col items-center py-2">
+                <img src="/images/icons/align.vertical.bottom.png" alt="">
+                <p class="text-[15px] text-[#9AA5A0]">Investment</p>
+            </li>
+            <li class="flex flex-col items-center py-2">
+                <img src="/images/icons/person.crop.rectangle.stack.png" alt="">
+                <p class="text-[15px] text-[#9AA5A0]">Team</p>
+            </li>
+            <li class="flex flex-col items-center py-2">
+                <img src="/images/icons/folder.png" alt="">
+                <p class="text-[15px] text-[#9AA5A0]">Duties</p>
+            </li>
+            <li class="flex flex-col items-center py-2">
+                <img src="/images/icons/person.crop.circle.png" alt="">
+                <p class="text-[15px] text-[#9AA5A0]">Account</p>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- banner section -->
+    <section class="flex gap-[6px] relative">
+        <div class="bg-white pt-9 rounded-[20px] relative pb-3 w-[90%]">
+            <img src="/images/homeBannerBg.png" class="absolute top-0 w-full" alt="">
+            <img src="/images/icons/Frame9.png" class="absolute -top-10 left-0 right-0 mx-auto" alt="">
+            <div class="px-3">
+                <p class="text-[15px] text-[#5F6B66] text-center">Main Wallet</p>
+
+                <div class="flex items-center justify-center gap-2 mt-3 mb-2">
+                    <p class="text-[#5F6B66] text-xl">Rp</p>
+                    <p class="text-center"><span class="text-[#1C1C1C] text-4xl font-semibold">40,000</span><span
+                            class="text-[#9AA5A0] text-4xl font-semibold">.00</span></p>
+                </div>
+                <p class="text-[#5F6B66] text-[15px] text-center mb-3">Rp 12,000 <span
+                        class="text-[#1BB35F]">(+2.2%)</span>
+                </p>
+                <div class="flex items-center gap-1 w-full">
+                    <button
+                        class="bg-gradient-to-r from-[#1F6F43] via-[#2E8F5A] to-[#3FA66B] py-4 rounded-2xl text-white flex items-center justify-center gap-1 w-full">
+                        <img src="/images/icons/Frame121.png" alt="">
+                        <span>Top Up</span>
+                    </button>
+                    <button
+                        class="py-4 border border-gray-300 text-[#5F6B66] rounded-2xl flex items-center justify-center gap-1 w-full">
+                        <img src="/images/icons/solar_arrow-down-outline.png" alt="">
+                        <span>Withdraw</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white w-[10%] rounded-[20px] max-h-full">
+        </div>
+        <button
+            class="absolute -right-1 top-0 bottom-0 my-auto shadow-lg h-11 w-11 bg-gradient-to-r from-[#1F6F43] via-[#2E8F5A] to-[#3FA66B] rounded-full">
+            <img class="mx-auto" src="/images/icons/chevron.right.png" alt="">
+        </button>
+    </section>
+
+    <section>
+        <ul class="bg-white rounded-[20px] mt-2 p-3 grid grid-cols-4 gap-1 shadow-lg mb-5">
+            <li class="border border-[#EEEEEE] flex flex-col items-center gap-2 p-[10px] rounded-2xl text-xs">
+                <img src="/images/icons/about.png" alt="">
+                <p>About</p>
+            </li>
+            <li class="border border-[#EEEEEE] flex flex-col items-center gap-2 p-[10px] rounded-2xl text-xs">
+                <img src="/images/icons/download.png" alt="">
+                <p>Download</p>
+            </li>
+            <li class="border border-[#EEEEEE] flex flex-col items-center gap-2 p-[10px] rounded-2xl text-xs">
+                <img src="/images/icons/Absence.png" alt="">
+                <p>Absence</p>
+            </li>
+            <li class="border border-[#EEEEEE] flex flex-col items-center gap-2 p-[10px] rounded-2xl text-xs">
+                <img src="/images/icons/Prizes.png" alt="">
+                <p>Prizes</p>
+            </li>
+        </ul>
+    </section>
+
+    <h1 class="text-[18px] text-black font-semibold mb-8">Recommended products</h1>
+    <!-- card section-->
+    <section>
+        <div class="bg-white p-4 border border-green-700 rounded-2xl">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-1">
+                    <div class="p-[7px] border border-green-800 rounded-full">
+                        <img src="/images/icons/logoIcon.png" alt="">
+                    </div>
+                    <p class="text-[16px] font-[510]">Vesta Core</p>
+                </div>
+                <div class="flex items-center gap-1 bg-[#EDF9FF] px-4 py-1 border border-[#51C0FF] rounded-2xl">
+                    <img src="/images/icons/rocket.png" alt="">
+                    <p class="text-[#51C0FF] text-sm">Recommended</p>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-between mt-3">
+                <p class="text-[#5F6B66] text-xs">Investment</p>
+                <p class="flex items-center gap-1">
+                    <span class="text-[#5F6B66] text-sm">Rp</span>
+                    <span class="text-[#1C1C1C] font-[590] text-[22px]">12,000</span>
+                </p>
+            </div>
+            <div class="flex items-center justify-between border border-[#EEEEEE] rounded-xl py-2 px-3">
+                <div>
+                    <p class="flex items-center gap-1 mb-2">
+                        <span class="text-[#1C1C1C] font-[590] text-[16px]">45</span>
+                        <span class="text-[#5F6B66] text-[10px]">Days</span>
+                    </p>
+                    <p class="text-[#5F6B66] text-[11px]">Duration</p>
+                </div>
+                <div>
+                    <p class="flex items-center gap-1 mb-2">
+                        <span class="text-[#5F6B66] text-[10px]">Rp</span>
+                        <span class="text-[#1C1C1C] font-[590] text-[16px]">900</span>
+                    </p>
+                    <p class="text-[#5F6B66] text-[11px]">Daily Income</p>
+                </div>
+                <div>
+                    <p class="flex items-center gap-1 mb-2">
+                        <span class="text-[#1C1C1C] font-[590] text-[16px]">24</span>
+                        <span class="text-[#5F6B66] text-[10px]">Hr</span>
+                    </p>
+                    <p class="text-[#5F6B66] text-[11px]">Profit Every</p>
+                </div>
+            </div>
+
+            <div class="mt-3 flex items-center justify-between">
+                <div>
+                    <p class="text-[#5F6B66] text-[11px]">Total Profit Gain</p>
+                    <p class="flex items-center gap-1 mb-2">
+                        <span class="text-[#5F6B66] text-[10px]">Rp</span>
+                        <span class="text-[#1C1C1C] font-[590] text-[16px]">900</span>
+                    </p>
+                </div>
+
+                <button class="bg-[#1F6F43] py-4 px-6 text-white rounded-[50px] text-xs">Choose an Investment</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- download Section (need to edit this section for background img issue) -->
+    <section class="mt-10 mb-4">
+        <img src="/images/download.png" class="w-full" alt="">
+    </section>
+
+    <!-- Latest News Section -->
+    <section>
+        <h2 class="text-[18px] font-[590] mb-4">Latest News</h4>
+            <!-- Cards -->
+            <div>
+                <!-- card -->
+                <div class="flex items-center gap-[10px] pb-3 border-b border-[#EEEEEE] mt-4">
+                    <img src="/images/Rectangle2.png" alt="">
+                    <div>
+                        <div class="flex items-center justify-between mb-[6px]">
+                            <p
+                                class="text-[10px] text-[#2E7D4F] bg-white border border-[#EEEEEE] px-2 py-[2px] rounded-[30px]">
+                                Promo</p>
+                            <p class="text-[#5F6B66] text-xs">10 Jan 2026</p>
+                        </div>
+                        <p class="text-[16px] font-[590] mb-[10px]">Balance Deposit Tutorial at Invesperia</p>
+                        <a href="#" class="text-xs text-[#1F6F43] flex items-center gap-1">
+                            Learn More
+                            <img src="/images/icons/solar_arrow-right-linear.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <!-- card -->
+                <div class="flex items-center gap-[10px] pb-3 border-b border-[#EEEEEE] mt-4">
+                    <img src="/images/Rectangle2.png" alt="">
+                    <div>
+                        <div class="flex items-center justify-between mb-[6px]">
+                            <p
+                                class="text-[10px] text-[#2E7D4F] bg-white border border-[#EEEEEE] px-2 py-[2px] rounded-[30px]">
+                                Promo</p>
+                            <p class="text-[#5F6B66] text-xs">10 Jan 2026</p>
+                        </div>
+                        <p class="text-[16px] font-[590] mb-[10px]">Balance Deposit Tutorial at Invesperia</p>
+                        <a href="#" class="text-xs text-[#1F6F43] flex items-center gap-1">
+                            Learn More
+                            <img src="/images/icons/solar_arrow-right-linear.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <!-- card -->
+                <div class="flex items-center gap-[10px] pb-3 border-b border-[#EEEEEE] mt-4">
+                    <img src="/images/Rectangle2.png" alt="">
+                    <div>
+                        <div class="flex items-center justify-between mb-[6px]">
+                            <p
+                                class="text-[10px] text-[#2E7D4F] bg-white border border-[#EEEEEE] px-2 py-[2px] rounded-[30px]">
+                                Promo</p>
+                            <p class="text-[#5F6B66] text-xs">10 Jan 2026</p>
+                        </div>
+                        <p class="text-[16px] font-[590] mb-[10px]">Balance Deposit Tutorial at Invesperia</p>
+                        <a href="#" class="text-xs text-[#1F6F43] flex items-center gap-1">
+                            Learn More
+                            <img src="/images/icons/solar_arrow-right-linear.png" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                
+            </div>
+    </section>
+
+</html>
