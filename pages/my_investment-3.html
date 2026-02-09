@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invesperia</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="p-4 pb-36">
+    <!-- Bottom Navbar -->
+    <nav class="fixed bottom-0 right-0 left-0 mx-auto bg-white border-t border-gray-300 w-full z-40">
+        <ul class="flex items-center justify-center">
+            <li>
+                <a href="/pages/home.html" class="flex flex-col items-center py-2">
+                    <img src="/images/icons/house.fill-2.png" alt="">
+                    <p class="text-[15px] text-[#9AA5A0]">Home</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="flex flex-col items-center py-2 relative">
+                    <div class="w-[40%] h-[3px] bg-[#1F6F43] absolute top-0"></div>
+                    <img src="/images/icons/align.vertical.bottom-fill.png" alt="">
+                    <p class="text-[15px] text-[#1F6F43]">Investment</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="flex flex-col items-center py-2">
+                    <img src="/images/icons/person.crop.rectangle.stack.png" alt="">
+                    <p class="text-[15px] text-[#9AA5A0]">Team</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="flex flex-col items-center py-2">
+                    <img src="/images/icons/folder.png" alt="">
+                    <p class="text-[15px] text-[#9AA5A0]">Duties</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="flex flex-col items-center py-2">
+                    <img src="/images/icons/person.crop.circle.png" alt="">
+                    <p class="text-[15px] text-[#9AA5A0]">Account</p>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <h1 class="text-[28px] font-[590] text-[#1C1C1C]">Investments</h1>
+    <div class="my-4 bg-[#F8F8F8] border border-gray-200 rounded-2xl p-1 grid grid-cols-2">
+        <button>
+            <a class="block bg-transparent text-[15px] text-[#5F6B66] border-gray-200 py-3 px-4 rounded-xl"
+                href="/pages/Investment.html">
+                Package Options
+            </a>
+        </button>
+        <button>
+            <a class="block bg-white text-[15px] py-3 px-4 rounded-xl" href="/pages/my_investment.html">
+                My Investments
+            </a>
+        </button>
+    </div>
+
+    <!-- card section-->
+    <section class="grid gap-3">
+        <!-- card -->
+        <div class="bg-white p-4 border border-green-700 rounded-2xl">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-1">
+                    <div class="p-[7px] border border-green-800 rounded-full">
+                        <img src="/images/icons/logoIcon.png" alt="">
+                    </div>
+                    <p class="text-[16px] font-[510]">Vesta Core</p>
+                </div>
+                <div class="flex items-center gap-1 px-4 py-[6px] border border-[#FE9239] rounded-[50px]">
+                    <!-- day left parcentage -->
+                    <div class="relative w-5 h-5 rounded-full flex items-center justify-center"
+                        style="background: conic-gradient(#FF8D28 19%, #e5e7eb 0);">
+                        <div
+                            class="bg-white w-4 h-4 rounded-full flex items-center justify-center text-lg font-semibold">
+                        </div>
+                    </div>
+                    <p class="text-[#FE9239] text-sm">19 days left</p>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-between mt-3">
+                <p class="text-[#5F6B66] text-xs">Investment</p>
+                <p class="flex items-center gap-1">
+                    <span class="text-[#5F6B66] text-sm">Rp</span>
+                    <span class="text-[#1C1C1C] font-[590] text-[22px]">12,000</span>
+                </p>
+            </div>
+            <div class="flex items-center justify-between border border-[#EEEEEE] rounded-xl py-2 px-3">
+                <div>
+                    <p class="flex items-center gap-1 mb-2">
+                        <span class="text-[#1C1C1C] font-[590] text-[16px]">45</span>
+                        <span class="text-[#5F6B66] text-[10px]">Days</span>
+                    </p>
+                    <p class="text-[#5F6B66] text-[11px]">Duration</p>
+                </div>
+                <div>
+                    <p class="flex items-center gap-1 mb-2">
+                        <span class="text-[#5F6B66] text-[10px]">Rp</span>
+                        <span class="text-[#1C1C1C] font-[590] text-[16px]">900</span>
+                    </p>
+                    <p class="text-[#5F6B66] text-[11px]">Daily Income</p>
+                </div>
+                <div>
+                    <p class="flex items-center gap-1 mb-2">
+                        <span class="text-[#1C1C1C] font-[590] text-[16px]">24</span>
+                        <span class="text-[#5F6B66] text-[10px]">Hr</span>
+                    </p>
+                    <p class="text-[#5F6B66] text-[11px]">Profit Every</p>
+                </div>
+            </div>
+
+            <!-- range -->
+            <div class="mt-3">
+                <div class="bg-[#F4F4F4] h-2 rounded-[30px] mb-1 overflow-hidden">
+                    <div class="bg-[#1BB35F] h-2 w-[20%]">
+
+                    </div>
+                </div>
+                <div class="flex justify-between items-center">
+                    <p class="text-[#5F6B66] text-[10px]">Next Profit</p>
+                    <p class="font-[590] text-xs">1:13:19</p>
+                </div>
+            </div>
+        </div>
+        <!-- card -->
+        <div class="bg-white p-4 border border-green-700 rounded-2xl">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-1">
+                    <div class="p-[7px] border border-green-800 rounded-full">
+                        <img src="/images/icons/logoIcon.png" alt="">
+                    </div>
+                    <p class="text-[16px] font-[510]">Vesta Core</p>
+                </div>
+                <div class="flex items-center gap-1 px-4 py-[6px] border border-[#FE9239] rounded-[50px]">
+                    <!-- day left parcentage -->
+                    <div class="relative w-5 h-5 rounded-full flex items-center justify-center"
+                        style="background: conic-gradient(#FF8D28 19%, #e5e7eb 0);">
+                        <div
+                            class="bg-white w-4 h-4 rounded-full flex items-center justify-center text-lg font-semibold">
+                        </div>
+                    </div>
+                    <p class="text-[#FE9239] text-sm">19 days left</p>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-between mt-3">
+                <p class="text-[#5F6B66] text-xs">Investment</p>
+                <p class="flex items-center gap-1">
+                    <span class="text-[#5F6B66] text-sm">Rp</span>
+                    <span class="text-[#1C1C1C] font-[590] text-[22px]">12,000</span>
+                </p>
+            </div>
+            <div class="flex items-center justify-between border border-[#EEEEEE] rounded-xl py-2 px-3">
+                <div>
+                    <p class="flex items-center gap-1 mb-2">
+                        <span class="text-[#1C1C1C] font-[590] text-[16px]">45</span>
+                        <span class="text-[#5F6B66] text-[10px]">Days</span>
+                    </p>
+                    <p class="text-[#5F6B66] text-[11px]">Duration</p>
+                </div>
+                <div>
+                    <p class="flex items-center gap-1 mb-2">
+                        <span class="text-[#5F6B66] text-[10px]">Rp</span>
+                        <span class="text-[#1C1C1C] font-[590] text-[16px]">900</span>
+                    </p>
+                    <p class="text-[#5F6B66] text-[11px]">Daily Income</p>
+                </div>
+                <div>
+                    <p class="flex items-center gap-1 mb-2">
+                        <span class="text-[#1C1C1C] font-[590] text-[16px]">24</span>
+                        <span class="text-[#5F6B66] text-[10px]">Hr</span>
+                    </p>
+                    <p class="text-[#5F6B66] text-[11px]">Profit Every</p>
+                </div>
+            </div>
+
+            <!-- range -->
+            <div class="mt-3">
+                <div class="bg-[#F4F4F4] h-2 rounded-[30px] mb-1 overflow-hidden">
+                    <div class="bg-[#1BB35F] h-2 w-[20%]">
+
+                    </div>
+                </div>
+                <div class="flex justify-between items-center">
+                    <p class="text-[#5F6B66] text-[10px]">Next Profit</p>
+                    <p class="font-[590] text-xs">1:13:19</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Modal view -->
+    <section>
+        <div class="bg-black opacity-20 h-full w-full absolute top-0 bottom-0 right-0 left-0 z-40"></div>
+        <div class="bg-white absolute w-full right-0 left-0 bottom-0 z-50 px-4 pt-5 rounded-t-[40px]">
+            <div class="bg-gray-400 h-[5px] w-[100px] mb-7 mx-auto rounded-[100px]"></div>
+            <p class="text-2xl font-[590] mb-[38px] text-center">
+                Profit Details
+            </p>
+            <ul>
+                <li class="flex items-center justify-between mb-3">
+                    <p class="text-[#5F6B66] text-[14px]">Profit Gain</p>
+                    <p class="flex items-center gap-1">
+                        <span class="text-[#5F6B66] text-sm">Rp</span>
+                        <span class="text-[#1C1C1C] font-[590] text-[22px]">12,000</span>
+                    </p>
+                </li>
+                <li class="flex items-center justify-between mb-3">
+                    <p class="text-[#5F6B66] text-[14px]">Profit</p>
+                    <div class="flex items-center gap-1">
+                        <div class="w-8 p-[7px] border border-green-800 rounded-full">
+                            <img src="/images/icons/logoIcon.png" alt="">
+                        </div>
+                        <p class="text-[16px] font-[510]">Vesta Core</p>
+                    </div>
+                </li>
+                <li class="flex items-center justify-between mb-3">
+                    <p class="text-[#5F6B66] text-[14px]">Date Received</p> 12 Jan 2025, 19:30
+                </li>
+                <li class="flex items-center justify-between mb-3">
+                    <p class="text-[#5F6B66] text-[14px]">Date Withdrawable</p> 12 Jan 2025, 19:30
+                </li>
+                <li class="flex items-center justify-between mb-3">
+                    <p class="text-[#5F6B66] text-[14px]">Status</p> <span class="text-[#1F6F43]">Received</span>
+                </li>
+
+                <li class="flex flex-col gap-3 mt-8 mb-5">
+                    <button
+                        class="bg-gradient-to-r from-[#1F6F43] to-[#3FA66B] text-white py-[18px] rounded-[30px]">Withdrawal</button>
+                    <button class="text-[#5F6B66] py-[18px] border border-gray-300 rounded-[30px]">Close</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+</html>
