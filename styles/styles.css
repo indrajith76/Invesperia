@@ -19,3 +19,8 @@
   background-size: cover;
   min-height: 100vh;
 }
+
+.btnGreenBG {
+  background: linear-gradient(90deg, #1F6F43 0%, #3FA66B 100%);
+  color: white;
+}
