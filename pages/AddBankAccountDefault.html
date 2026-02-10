@@ -14,24 +14,22 @@
         <a class="absolute left-4 top-0 bottom-0 my-auto flex items-center" href="/pages/Team.html">
             <img src="/images/icons/rightArrowWithCircle.png" alt="">
         </a>
-        <h4 class="text-[20px] text-center py-5">Edit Bank Account</h4>
+        <h4 class="text-[20px] text-center py-5">Add Bank Account</h4>
     </header>
 
     <section class="px-4">
-        <h1 class="text-[22px] font-bold my-4 text-[#1C1C1C]">Edit Bank Details</h1>
+        <h1 class="text-[22px] font-bold my-4 text-[#1C1C1C]">Add Bank Account</h1>
 
         <div>
             <div>
                 <label class="text-[#5F6B66]" for="">Select Bank</label>
                 <div class="relative w-full mt-2">
-                    <!-- custom img -->
-                    <span class="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 ">
-                        <img class="w-[40px]" src="/images/icons/Frame80.png" alt="">
-                    </span>
-                    <select
-                        class="appearance-none pl-[64px] py-2 pr-10 border border-[#9AA5A0] rounded-xl w-full h-[56px]">
-                        <option disabled>Bank BRI</option>
-                        <option>Bank BRI</option>
+                    <select class="appearance-none px-4 py-2 border border-[#9AA5A0] rounded-xl w-full h-[56px]">
+                        <option disabled selected>Choose your Bank</option>
+                        <option value="QRIS / E-Wallet">QRIS / E-Wallet</option>
+                        <option value="Bank BRI">Bank BRI</option>
+                        <option value="Bank BNI">Bank BNI</option>
+                        <option value="Bank Mandiri">Bank Mandiri</option>
                     </select>
 
                     <!-- custom arrow -->
@@ -44,13 +42,13 @@
             <div class="mt-4">
                 <label class="text-[#5F6B66]" for="">Account Name</label>
                 <input type="text" name="" id="" class="w-full h-[56px] border border-[#9AA5A0] rounded-xl p-4"
-                    placeholder="John Doe">
+                    placeholder="Select Account Type">
             </div>
 
             <div class="mt-4">
                 <label class="text-[#5F6B66]" for="">Account Number</label>
                 <input type="text" name="" id="" class="w-full h-[56px] border border-[#9AA5A0] rounded-xl p-4"
-                    placeholder="1223 1223 1234">
+                    placeholder="Enter your account number">
             </div>
         </div>
     </section>
@@ -59,10 +57,10 @@
     <div
         class="bg-[#f3f3f3] fixed bottom-0 w-full h-auto px-4 py-4 flex items-center justify-center flex-col gap-[10px]">
         <button class="btnGreenBG w-full py-[18px] rounded-[30px]">
-            Add Bank Account
+            Save Bank Details
         </button>
         <button class="bg-[#f3f3f3] border border-gray-300 w-full py-[18px] rounded-[30px] text-[#5F6B66]">
-            Cancel
+            Save Bank Details
         </button>
     </div>
 
