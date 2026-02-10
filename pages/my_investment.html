@@ -62,8 +62,23 @@
         </button>
     </div>
 
-    <!-- card section-->
-    <section class="grid gap-3">
+    <!-- Category Tab 1 -->
+    <div class="my-4 bg-[#F8F8F8] border border-gray-200 rounded-2xl p-1 grid grid-cols-2">
+
+        <button id="btn-Tab1"
+            class="tab-btn bg-white text-black text-[15px] py-3 px-4 rounded-xl transition-all duration-300 ease-in-out shadow-sm">
+            Tab 1
+        </button>
+
+        <button id="btn-Tab2"
+            class="tab-btn bg-transparent text-[#5F6B66] text-[15px] py-3 px-4 rounded-xl transition-all duration-300 ease-in-out">
+            Tab 2
+        </button>
+
+    </div>
+
+    <!-- card section 1-->
+    <section class="grid gap-3" id="ContentForTab-1">
         <!-- card -->
         <div class="bg-white p-4 border border-green-700 rounded-2xl">
             <div class="flex items-center justify-between">
@@ -142,13 +157,14 @@
                     </p>
                 </div>
 
-                <button class="bg-[linear-gradient(90deg,#1F6F43_0%,#3FA66B_100%)] py-4 px-6 text-white rounded-[50px] text-xs flex items-center gap-1">
+                <button
+                    class="bg-[linear-gradient(90deg,#1F6F43_0%,#3FA66B_100%)] py-4 px-6 text-white rounded-[50px] text-xs flex items-center gap-1">
                     Check Detail Profit
                     <img src="/images/icons/arrow.up.forward.png" alt="">
                 </button>
             </div>
         </div>
-        
+
         <!-- card -->
         <div class="bg-white p-4 border border-green-700 rounded-2xl">
             <div class="flex items-center justify-between">
@@ -227,7 +243,8 @@
                     </p>
                 </div>
 
-                <button class="bg-[linear-gradient(90deg,#1F6F43_0%,#3FA66B_100%)] py-4 px-6 text-white rounded-[50px] text-xs flex items-center gap-1">
+                <button
+                    class="bg-[linear-gradient(90deg,#1F6F43_0%,#3FA66B_100%)] py-4 px-6 text-white rounded-[50px] text-xs flex items-center gap-1">
                     Check Detail Profit
                     <img src="/images/icons/arrow.up.forward.png" alt="">
                 </button>
@@ -236,6 +253,120 @@
 
     </section>
 
+    <!-- card section 2-->
+    <section class="grid gap-3" id="ContentForTab-2">
+        <!-- card -->
+        <div class="bg-white p-4 border border-[#FE8D28] rounded-2xl">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-1">
+                    <div class="p-[7px] border border-[#FE8D28] rounded-full">
+                        <img src="/images/icons/logoIcon.png" alt="">
+                    </div>
+                    <p class="text-[16px] font-[510]">Vesta Core</p>
+                </div>
+                <div class="flex items-center gap-1 px-4 py-[6px] border border-[#FE9239] rounded-[50px]">
+                    <!-- day left parcentage -->
+                    <div class="relative w-5 h-5 rounded-full flex items-center justify-center"
+                        style="background: conic-gradient(#FF8D28 19%, #e5e7eb 0);">
+                        <div
+                            class="bg-white w-4 h-4 rounded-full flex items-center justify-center text-lg font-semibold">
+                        </div>
+                    </div>
+                    <p class="text-[#FE9239] text-sm">19 days left</p>
+                </div>
+            </div>
 
+            <div class="flex items-center justify-between mt-3">
+                <p class="text-[#5F6B66] text-xs">Investment</p>
+                <p class="flex items-center gap-1">
+                    <span class="text-[#5F6B66] text-sm">Rp</span>
+                    <span class="text-[#1C1C1C] font-[590] text-[22px]">12,000</span>
+                </p>
+            </div>
+            <div class="flex items-center justify-between border border-[#EEEEEE] rounded-xl py-2 px-3">
+                <div>
+                    <p class="flex items-center gap-1 mb-2">
+                        <span class="text-[#1C1C1C] font-[590] text-[16px]">45</span>
+                        <span class="text-[#5F6B66] text-[10px]">Days</span>
+                    </p>
+                    <p class="text-[#5F6B66] text-[11px]">Duration</p>
+                </div>
+                <div>
+                    <p class="flex items-center gap-1 mb-2">
+                        <span class="text-[#5F6B66] text-[10px]">Rp</span>
+                        <span class="text-[#1C1C1C] font-[590] text-[16px]">900</span>
+                    </p>
+                    <p class="text-[#5F6B66] text-[11px]">Daily Income</p>
+                </div>
+                <div>
+                    <p class="flex items-center gap-1 mb-2">
+                        <span class="text-[#1C1C1C] font-[590] text-[16px]">24</span>
+                        <span class="text-[#5F6B66] text-[10px]">Hr</span>
+                    </p>
+                    <p class="text-[#5F6B66] text-[11px]">Profit Every</p>
+                </div>
+            </div>
+
+            <!-- range -->
+            <div class="mt-3">
+                <div class="bg-[#F4F4F4] h-2 rounded-[30px] mb-1 overflow-hidden">
+                    <div class="bg-[#FF8D28] h-2 w-[20%]">
+
+                    </div>
+                </div>
+                <div class="flex justify-between items-center">
+                    <p class="text-[#5F6B66] text-[10px]">Next Profit</p>
+                    <p class="font-[590] text-xs">1:13:19</p>
+                </div>
+            </div>
+
+            <div class="mt-2 pt-2 flex items-center justify-between border-t border-gray-300">
+                <div class="relative pl-[10px]">
+                    <div
+                        class="border-l-[1px] border-[#FE8D28] w-[1px] h-[80%] top-0 bottom-0 my-auto absolute -left-0">
+                    </div>
+                    <p class="text-[#5F6B66] text-[11px]">Total Profit Gain</p>
+                    <p class="flex items-center gap-1 ">
+                        <img src="/images/icons/Vector.png" alt="">
+                        <span class="text-[#5F6B66] text-[10px]">Rp</span>
+                        <span class="text-[#1C1C1C] font-[590] text-[16px]">900</span>
+                    </p>
+                </div>
+
+                <button
+                    class="bg-[linear-gradient(90deg,#FF8D28_0%,#FF8D28_100%)] py-4 px-6 text-white rounded-[50px] text-xs flex items-center gap-1">
+                    Check Detail Profit
+                    <img src="/images/icons/arrow.up.forward.png" alt="">
+                </button>
+            </div>
+        </div>
+ 
+
+    </section>
+
+    <script>
+        const btnTab1 = document.getElementById("btn-Tab1");
+        const btnTab2 = document.getElementById("btn-Tab2");
+        const ContentForTab1 = document.getElementById("ContentForTab-1");
+        const ContentForTab2 = document.getElementById("ContentForTab-2");
+
+        function activate(activeBtn, inactiveBtn) {
+            activeBtn.classList.add("bg-white", "text-black", "shadow-sm");
+            inactiveBtn.classList.remove("bg-white", "text-black", "shadow-sm");
+            inactiveBtn.classList.add("bg-transparent", "text-[#5F6B66]");
+        }
+
+        btnTab1.addEventListener("click", () => {
+            ContentForTab2.classList.add("hidden");
+            ContentForTab1.classList.remove("hidden");
+            activate(btnTab1, btnTab2);
+        });
+
+        btnTab2.addEventListener("click", () => {
+            ContentForTab1.classList.add("hidden");
+            ContentForTab2.classList.remove("hidden");
+            activate(btnTab2, btnTab1);
+        });
+    </script>
 
 </html>

@@ -64,30 +64,22 @@
     </div>
 
     <!-- Category Tab 1 -->
-     <div class="my-4 bg-[#F8F8F8] border border-gray-200 rounded-2xl p-1 grid grid-cols-2">
-        <button class="block bg-white text-[15px] border-gray-200 py-3 px-4 rounded-xl">
-            Tab 1 
-        </button>
-        <button class="block bg-transparent text-[15px] text-[#5F6B66] py-3 px-4 rounded-xl"> 
-            Tab 2
-        </button>
-    </div>
+    <div class="my-4 bg-[#F8F8F8] border border-gray-200 rounded-2xl p-1 grid grid-cols-2">
 
-    <!-- Category Tab 2 -->
-    <div class="my-4 bg-[#F8F8F8] border border-gray-200 rounded-2xl p-1 grid grid-cols-3">
-        <button class="block bg-white text-[15px] border-gray-200 py-3 px-4 rounded-xl">
-            Tab 1 
+        <button id="btn-Tab1"
+            class="tab-btn bg-white text-black text-[15px] py-3 px-4 rounded-xl transition-all duration-300 ease-in-out shadow-sm">
+            Tab 1
         </button>
-        <button class="block bg-transparent text-[15px] text-[#5F6B66] py-3 px-4 rounded-xl"> 
+
+        <button id="btn-Tab2"
+            class="tab-btn bg-transparent text-[#5F6B66] text-[15px] py-3 px-4 rounded-xl transition-all duration-300 ease-in-out">
             Tab 2
         </button>
-        <button class="block bg-transparent text-[15px] text-[#5F6B66] py-3 px-4 rounded-xl"> 
-            Tab 2
-        </button>
-    </div>
+
+    </div> 
 
     <!-- card section-->
-    <section class="grid gap-3">
+    <section class="grid gap-3" id="ContentForTab-1">
         <!-- card -->
         <div class="bg-white p-4 border border-green-700 rounded-2xl">
             <div class="flex items-center justify-between">
@@ -337,5 +329,96 @@
             </div>
         </div>
     </section>
+
+    <section class="grid gap-3" id="ContentForTab-2">
+        <!-- card -->
+        <div class="bg-white p-4 border border-[#FE9239] rounded-2xl">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-1">
+                    <div class="p-[7px] border border-[#FE9239] rounded-full">
+                        <img src="/images/icons/logoIcon.png" alt="">
+                    </div>
+                    <p class="text-[16px] font-[510]">Vesta Core</p>
+                </div>
+                <div class="flex items-center gap-1 bg-[#FFF7ED] px-4 py-1 border border-[#FE9239] rounded-2xl">
+                    <img src="/images/icons/rocket_orange.png" alt="">
+                    <p class="text-[#FE9239] text-sm">Most Popular</p>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-between mt-3">
+                <p class="text-[#5F6B66] text-xs">Investment</p>
+                <p class="flex items-center gap-1">
+                    <span class="text-[#5F6B66] text-sm">Rp</span>
+                    <span class="text-[#1C1C1C] font-[590] text-[22px]">12,000</span>
+                </p>
+            </div>
+            <div class="flex items-center justify-between border border-[#EEEEEE] rounded-xl py-2 px-3">
+                <div>
+                    <p class="flex items-center gap-1 mb-2">
+                        <span class="text-[#1C1C1C] font-[590] text-[16px]">45</span>
+                        <span class="text-[#5F6B66] text-[10px]">Days</span>
+                    </p>
+                    <p class="text-[#5F6B66] text-[11px]">Duration</p>
+                </div>
+                <div>
+                    <p class="flex items-center gap-1 mb-2">
+                        <span class="text-[#5F6B66] text-[10px]">Rp</span>
+                        <span class="text-[#1C1C1C] font-[590] text-[16px]">900</span>
+                    </p>
+                    <p class="text-[#5F6B66] text-[11px]">Daily Income</p>
+                </div>
+                <div>
+                    <p class="flex items-center gap-1 mb-2">
+                        <span class="text-[#1C1C1C] font-[590] text-[16px]">24</span>
+                        <span class="text-[#5F6B66] text-[10px]">Hr</span>
+                    </p>
+                    <p class="text-[#5F6B66] text-[11px]">Profit Every</p>
+                </div>
+            </div>
+
+            <div class="mt-3 flex items-center justify-between">
+                <div class="relative pl-[10px]">
+                    <div
+                        class="border-l-[1px] border-[#FE9239] w-[1px] h-[80%] top-0 bottom-0 my-auto absolute -left-0">
+                    </div>
+                    <p class="text-[#5F6B66] text-[11px]">Total Profit Gain</p>
+                    <p class="flex items-center gap-1 ">
+                        <img src="/images/icons/Vector.png" alt="">
+                        <span class="text-[#5F6B66] text-[10px]">Rp</span>
+                        <span class="text-[#1C1C1C] font-[590] text-[16px]">900</span>
+                    </p>
+                </div>
+
+                <button class="bg-[#FE9239] py-4 px-6 text-white rounded-[50px] text-xs">Choose an Investment</button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const btnTab1 = document.getElementById("btn-Tab1");
+        const btnTab2 = document.getElementById("btn-Tab2");
+        const ContentForTab1 = document.getElementById("ContentForTab-1");
+        const ContentForTab2 = document.getElementById("ContentForTab-2");
+
+        function activate(activeBtn, inactiveBtn) {
+            activeBtn.classList.add("bg-white", "text-black", "shadow-sm");
+            inactiveBtn.classList.remove("bg-white", "text-black", "shadow-sm");
+            inactiveBtn.classList.add("bg-transparent", "text-[#5F6B66]");
+        }
+
+        btnTab1.addEventListener("click", () => {
+            ContentForTab2.classList.add("hidden");
+            ContentForTab1.classList.remove("hidden");
+            activate(btnTab1, btnTab2);
+        });
+
+        btnTab2.addEventListener("click", () => {
+            ContentForTab1.classList.add("hidden");
+            ContentForTab2.classList.remove("hidden");
+            activate(btnTab2, btnTab1);
+        });
+    </script>
+
 
 </html>
