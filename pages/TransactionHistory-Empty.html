@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invesperia</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <header class="relative border-b border-gray-300">
+        <a class="absolute left-4 top-0 bottom-0 my-auto flex items-center" href="/pages/Team.html">
+            <img src="/images/icons/rightArrowWithCircle.png" alt="">
+        </a>
+        <h4 class="text-[20px] text-center py-5">
+            Transaction history</h4>
+    </header>
+
+    <!-- all drop down -->
+    <div class="flex items-center gap-2 my-5 ml-4">
+        <div class="relative w-fit">
+            <select class="appearance-none px-4 py-2 pr-10 border border-[#EEEEEE] rounded-[40px]">
+                <option disabled>Date</option>
+                <option>Date</option>
+            </select>
+
+            <!-- custom arrow -->
+            <span class="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 ">
+                <img src="/images/icons/chevron.down.png" alt="">
+            </span>
+        </div>
+
+        <div class="relative w-fit">
+            <select class="appearance-none px-4 py-2 pr-10 border border-[#EEEEEE] rounded-[40px]">
+                <option disabled>Category</option>
+                <option>Category</option>
+            </select>
+
+            <!-- custom arrow -->
+            <span class="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 ">
+                <img src="/images/icons/chevron.down.png" alt="">
+            </span>
+        </div>
+
+        <div class="relative w-fit">
+            <select class="appearance-none px-4 py-2 pr-10 border border-[#EEEEEE] rounded-[40px]">
+                <option disabled>Methods</option>
+                <option>Methods</option>
+            </select>
+
+            <!-- custom arrow -->
+            <span class="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 ">
+                <img src="/images/icons/chevron.down.png" alt="">
+            </span>
+        </div>
+    </div>
+
+    <div class="mt-[96px]">
+        <div class="p-8 rounded-lg flex flex-col items-center">
+            <img class="mb-4" src="/images/NoInvoice.png" alt="">
+            <p class="text-2xl font-[590] mb-2 text-center">
+                No transaction yet
+            </p>
+            <p class="text-sm text-[#5F6B66] text-center">
+                Please top up the balance to start <br />investing.
+            </p>
+            <div class="w-full flex flex-col items-center gap-3 mt-5 mb-5">
+                <button class="w-[200px] btnGreenBG py-[15px] rounded-[30px] flex items-center justify-center gap-[2px]">
+                    <img src="/images/icons/Frame121.png" alt="">
+                    Top Up
+                </button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

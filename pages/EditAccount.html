@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invesperia</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="mb-40">
+    <header class="relative border-b border-gray-300">
+        <a class="absolute left-4 top-0 bottom-0 my-auto flex items-center" href="/pages/Team.html">
+            <img src="/images/icons/rightArrowWithCircle.png" alt="">
+        </a>
+        <h4 class="text-[20px] text-center py-5">Edit Account</h4>
+    </header>
+
+    <section class="px-4">
+        <div class="flex justify-center mt-7 mb-6">
+            <div class=" relative">
+                <img src="/images/Ellipse2.png" alt="">
+                <button class="p-[10px] border border-gray-300 absolute bottom-0 -right-[6px] bg-white rounded-full">
+                    <img src="/images/icons/arrow.triangle.2.circlepath.camera.png" alt="">
+                </button>
+            </div>
+        </div>
+
+        <div>
+            <div class="mt-4">
+                <label class="text-[#5F6B66]" for="">Full Name</label>
+                <input type="text" name="" id="" class="w-full h-[56px] border border-[#9AA5A0] rounded-xl p-4 mt-2"
+                    placeholder="John Doe">
+            </div>
+
+            <div class="mt-4">
+                <label class="text-[#5F6B66]" for="">Email Address</label>
+                <input type="text" name="" id="" class="w-full h-[56px] border border-[#9AA5A0] rounded-xl p-4 mt-2"
+                    placeholder="johndoe@gmail.com">
+            </div>
+
+            <div class="mt-4">
+                <label for="">Phone Number</label>
+                <div class="flex items-center gap-2 mt-2">
+                    <select name="" id=""
+                        class="border border-gray-300 rounded-xl w-[20%] h-[56px] bg-white text-[18px]">
+                        <option value="+62">+62</option>
+                    </select>
+                    <input
+                        class="border border-gray-300 rounded-xl inline w-[78%] h-[56px]  bg-white px-5 py-4 text-[18px]"
+                        placeholder="(480) 555-0103" type="text">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- bottom btn -->
+    <div
+        class="bg-[#f3f3f3] fixed bottom-0 w-full h-auto px-4 py-4 flex items-center justify-center flex-col gap-[10px]">
+        <button class="btnGreenBG w-full py-[18px] rounded-[30px]">
+            Save Bank Details
+        </button>
+        <button class="bg-[#f3f3f3] border border-gray-300 w-full py-[18px] rounded-[30px] text-[#5F6B66]">
+            Save Bank Details
+        </button>
+    </div>
+
+</html>
