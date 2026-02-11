@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invesperia</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="min-h-screen flex flex-col ">
+    <header class="relative border-b border-gray-300">
+        <a class="absolute left-4 top-0 bottom-0 my-auto flex items-center" href="/pages/Team.html">
+            <img src="/images/icons/rightArrowWithCircle.png" alt="">
+        </a>
+        <h4 class="text-[20px] text-center py-5">Top-Up Balance</h4>
+    </header>
+
+    <section class="p-4">
+
+        <div class="border border-green-800 p-4 rounded-[24px] mb-4">
+            <div class="flex items-center justify-between">
+                <button>
+                    <img src="/images/icons/Frame203.png" alt="">
+                </button>
+                <p class="text-[#5F6B66] text-sm">I'M TOP-UPPING</p>
+                <button>
+                    <img src="/images/icons/Frame204.png" alt="">
+                </button>
+            </div>
+            <div class="flex items-center justify-center gap-[10px]">
+                <p class="text-[#5F6B66]">Rp</p>
+                <input type="text" name="" class=" w-[194px] text-[50px] text-[#1C1C1C] caret-[#1F6F43] outline-none"
+                    id="" value="100,000">
+            </div>
+        </div>
+
+        <div>
+            <div class="flex items-center justify-between mb-1">
+                <p class="text-[#5F6B66] text-xs">Minimum Deposit</p>
+                <div class="flex items-center gap-[3px]">
+                    <p class="text-xs text-[#5F6B66]">Rp</p>
+                    <p>50,000</p>
+                </div>
+            </div>
+            <div class="flex items-center justify-between">
+                <p class="text-[#5F6B66] text-xs">Maximum Deposit</p>
+                <div class="flex items-center gap-[3px]">
+                    <p class="text-xs text-[#5F6B66]">Rp</p>
+                    <p>100,000</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="bg-[#F4F4F4] px-4 pt-5 mt-8 rounded-t-[40px] flex-1">
+        <h4 class="text-[#1C1C1C] text-[18px] font-bold">Choose Payment Method</h4>
+        <div class="mt-4 bg-[#F8F8F8] border border-gray-200 rounded-2xl grid grid-cols-2 gap-5">
+            <button>
+                <a class="block bg-white text-[15px] font-medium border border-[#1F6F43] py-3 px-4 rounded-xl"
+                    href="/pages/Investment.html">
+                    QRIS
+                </a>
+            </button>
+            <button>
+                <a class="block bg-white text-[15px] text-[#5F6B66] font-medium py-3 px-4 rounded-xl"
+                    href="/pages/my_investment.html">
+                    Bank
+                </a>
+            </button>
+        </div>
+
+        <div class="border border-[#1F6F43] bg-white p-4 rounded-xl mt-2 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <img src="/images/icons/Frame80(2).png" alt="">
+                <div>
+                    <p>QRIS / E-Wallet</p>
+                    <p>Top up via QRIS code</p>
+                </div>
+            </div>
+            <img src="/images/icons/material-symbols_check-rounded.png" alt="">
+        </div>
+        </div>
+    </section>
+
+    <!-- bottom btn -->
+    <div
+        class="bg-[#f3f3f3] fixed bottom-0 w-full h-auto px-4 py-4 flex items-center justify-center flex-col gap-[10px]">
+        <button class="btnGreenBG w-full py-[18px] rounded-[30px]">
+            Continue Payment
+        </button> 
+    </div>
+</body>
+
+</html>
