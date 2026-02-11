@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invesperia</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="min-h-screen flex flex-col ">
+    <header class="relative border-b border-gray-300">
+        <a class="absolute left-4 top-0 bottom-0 my-auto flex items-center" href="/pages/Team.html">
+            <img src="/images/icons/rightArrowWithCircle.png" alt="">
+        </a>
+        <h4 class="text-[20px] text-center py-5">Withdraw Balance</h4>
+    </header>
+
+    <section class="p-4">
+
+        <div class="border border-green-800 p-4 rounded-[24px] mb-4">
+            <div class="flex items-center justify-between">
+                <button>
+                    <img src="/images/icons/Frame203.png" alt="">
+                </button>
+                <p class="text-[#5F6B66] text-sm">I’m withdrawing</p>
+                <button>
+                    <img src="/images/icons/Frame204.png" alt="">
+                </button>
+            </div>
+            <div class="flex items-center justify-center gap-[10px]">
+                <p class="text-[#5F6B66]">Rp</p>
+                <input type="text" name="" class=" w-[194px] text-[50px] text-[#1C1C1C] caret-[#1F6F43] outline-none"
+                    id="" value="100,000">
+            </div>
+        </div>
+
+        <div class="bg-[#F8F8F8] rounded-3xl p-5 mb-2">
+            <p class="text-sm text-[#5F6B66] text-center mb-3">Amount Received</p>
+            <div class="flex items-center justify-center gap-2">
+                <p class="flex items-center gap-1"><span class="text-[#5F6B66]">Rp</span> <span
+                        class="text-[32px]">93,000</span></p>
+                <p
+                    class="text-[#0088FF] text-xs py-2 bg-[#0088FF1A] rounded-[40px] flex justify-center items-center gap-1 w-[148px]">
+                    <img src="/images/icons/Info.png" alt="">
+                    7% Tax Deduction
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <div class="flex items-center justify-between mb-1">
+                <p class="text-[#5F6B66] text-xs">Minimum Deposit</p>
+                <div class="flex items-center gap-[3px]">
+                    <p class="text-xs text-[#5F6B66]">Rp</p>
+                    <p>50,000</p>
+                </div>
+            </div>
+            <div class="flex items-center justify-between">
+                <p class="text-[#5F6B66] text-xs">Maximum Deposit</p>
+                <div class="flex items-center gap-[3px]">
+                    <p class="text-xs text-[#5F6B66]">Rp</p>
+                    <p>100,000</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="bg-[#F4F4F4] px-4 pt-5 mt-8 rounded-t-[40px] flex-1 pb-36">
+        <h4 class="text-[#1C1C1C] text-[18px] font-bold mb-4">Destination Account</h4>
+
+
+        <div class="bg-white border border-[#EEEEEE] p-4 rounded-xl w-full flex items-start gap-2 mb-3">
+            <img src="/images/icons/Frame80(2).png" alt="">
+            <div class="flex-2">
+                <div class="flex items-start justify-between w-full  bg-white">
+                    <div>
+                        <small class="text-xs text-[#5F6B66]">Bank Name</small>
+                        <p class="text-sm text-[#1C1C1C]">QRIS / E-Wallet</p>
+                    </div>
+                    <img src="/images/icons/material-symbols_check-rounded.png" alt="">
+                </div>
+                <div class="flex w-full mt-2">
+                    <div class="w-full">
+                        <small class="text-xs text-[#5F6B66]">Account Number</small>
+                        <p class="text-sm text-[#1C1C1C]">****1234</p>
+                    </div>
+                    <div class="w-full">
+                        <small class="text-xs text-[#5F6B66]">Account Type</small>
+                        <p class="text-sm text-[#1C1C1C]">Checking Account</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="text-[#5F6B66] bg-white w-full flex items-center justify-center gap-2 py-4 rounded-[30px]">
+            <img src="/images/icons/plus.png" alt="">
+            Add New Bank Account
+        </button>
+    </section>
+
+    <!-- bottom btn -->
+    <div class="bg-white fixed bottom-0 w-full h-auto px-4 py-4 flex items-center justify-center flex-col gap-[10px]">
+        <div class="flex items-center gap-1 bg-[#FFF7ED] px-4 py-1 border border-[#FE9239] rounded-2xl">
+            <img src="/images/icons/Info-2.png" alt="">
+            <p class="text-[#FE9239] text-sm">All withdrawals will be processed automatically</p>
+        </div>
+        <button class="btnGreenBG w-full py-[18px] rounded-[30px]">
+            Withdraw Balance
+        </button>
+    </div>
+
+    <!-- Modal view -->
+    <section>
+        <div class="bg-black opacity-20 h-screen overflow-hidden w-full absolute top-0 bottom-0 right-0 left-0 z-40">
+        </div>
+        <div
+            class="bg-white fixed w-[95%] mx-auto right-0 left-0 bottom-5 z-50 px-4 py-10 rounded-[40px] flex flex-col items-center">
+            <img src="/images/icons/Frame1322.png" alt="">
+            <p class="text-[28px] pt-5 font-bold text-[#1C1C1C] mb-6 text-center italic ">
+                WITHDRAWAL
+                <br />SUCCESSFUL
+            </p>
+            <p class="text-[#5F6B66] text-sm mb-5 text-center">Your Withdrawal Request has been processed <br />successfully.</p>
+            <button
+                class="bg-gradient-to-r from-[#1F6F43] to-[#3FA66B] text-white py-[18px] rounded-[30px] w-full">Close</button>
+        </div>
+    </section>
+</body>
+
+</html>
