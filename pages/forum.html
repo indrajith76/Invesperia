@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <title>Testimoni Pengguna</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+
+            background: url(/images/bg-proof.png) center / cover no-repeat fixed;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="max-w-[480px] mx-auto min-h-screen p-3 pb-28">
+
+        <!-- TOP BAR -->
+        <header class=" z-50 flex items-center justify-between bg-white/90 backdrop-blur-lg border-b px-4 py-3 shadow">
+
+            <div class="flex items-center gap-3">
+                <img src="https://perakmurni.com/frontend/img/new/logo.png"
+                    class="w-12 h-12 rounded-full border shadow">
+
+                <div>
+                    <p class="font-extrabold text-[17px] flex items-center gap-2 text-[#2d3a35]">
+                        <img src="https://perakmurni.com/frontend/img/iconpack/app-min.svg" class="w-8"> IDVESTA APP
+                    </p>
+                    <p class="text-xs text-gray-500">Testimoni Pengguna</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center gap-1">
+                <a href="#" class="bg-white/70 h-10 w-10 rounded-xl p-2 shadow">
+                    <iconify-icon icon="ph:arrow-left-bold" class="text-2xl text-red-700"></iconify-icon>
+                </a>
+                <p class="text-[11px] font-semibold text-[#666666]">Kembali</p>
+            </div>
+
+        </header>
+
+        <!-- TESTIMONIAL LIST -->
+        <div class="space-y-4 mt-4">
+
+            <!-- CARD -->
+            <div class="bg-[#ffffff99] backdrop-blur-xl rounded-2xl p-4 shadow border">
+
+                <div class="flex items-center gap-3 mb-3">
+                    <img src="https://perakmurni.com/upload/user/17679782616nQ.png"
+                        class="w-12 h-12 rounded-full border shadow">
+                    <div>
+                        <p class="text-xs text-gray-500">Nama: <span class="font-bold text-[#1a1a1a]">Aep badra</span>
+                        </p>
+                        <p class="text-xs text-gray-500">Nomor: <span class="font-bold">87*******67</span></p>
+                    </div>
+                </div>
+
+                <img src="https://perakmurni.com/upload/proof/1768735660nJ5.jpg" onclick="openImage(this.src)"
+                    class="rounded-xl w-full h-48 object-cover cursor-pointer shadow">
+
+                <p class="text-xs text-gray-500 mt-3 font-semibold">Komentar:</p>
+                <div class="bg-white/70 shadow-sm rounded-xl p-3 text-sm mt-1">
+                    Sat set yes
+                </div>
+
+                <div class="flex justify-between items-center mt-3 pt-2 text-xs text-gray-500">
+
+                    <div>
+                        <p class="font-semibold">Rating Pengguna</p>
+                        <div class="flex mt-1 text-red-700 text-lg">
+                            <iconify-icon icon="solar:star-bold-duotone" style="opacity:1;"></iconify-icon>
+                            <iconify-icon icon="solar:star-bold-duotone" style="opacity:1;"></iconify-icon>
+                            <iconify-icon icon="solar:star-bold-duotone" style="opacity:1;"></iconify-icon>
+                            <iconify-icon icon="solar:star-bold-duotone" style="opacity:1;"></iconify-icon>
+                            <iconify-icon icon="solar:star-bold-duotone" style="opacity:1;"></iconify-icon>
+                        </div>
+                    </div>
+
+                    <p class="italic">18 Jan 2026, 19:27 WIB</p>
+
+                </div>
+            </div>
+            <!-- CARD -->
+            <div class="bg-[#ffffff99] backdrop-blur-xl rounded-2xl p-4 shadow border">
+
+                <div class="flex items-center gap-3 mb-3">
+                    <img src="https://perakmurni.com/upload/user/17679782616nQ.png"
+                        class="w-12 h-12 rounded-full border shadow">
+                    <div>
+                        <p class="text-xs text-gray-500">Nama: <span class="font-bold text-[#1a1a1a]">Aep badra</span>
+                        </p>
+                        <p class="text-xs text-gray-500">Nomor: <span class="font-bold">87*******67</span></p>
+                    </div>
+                </div>
+
+                <img src="https://perakmurni.com/upload/proof/1768735660nJ5.jpg" onclick="openImage(this.src)"
+                    class="rounded-xl w-full h-48 object-cover cursor-pointer shadow">
+
+                <p class="text-xs text-gray-500 mt-3 font-semibold">Komentar:</p>
+                <div class="bg-white/70 shadow-sm rounded-xl p-3 text-sm mt-1">
+                    Sat set yes
+                </div>
+
+                <div class="flex justify-between items-center mt-3 pt-2 text-xs text-gray-500">
+
+                    <div>
+                        <p class="font-semibold">Rating Pengguna</p>
+                        <div class="flex mt-1 text-red-700 text-lg">
+                            <iconify-icon icon="solar:star-bold-duotone" style="opacity:1;"></iconify-icon>
+                            <iconify-icon icon="solar:star-bold-duotone" style="opacity:1;"></iconify-icon>
+                            <iconify-icon icon="solar:star-bold-duotone" style="opacity:1;"></iconify-icon>
+                            <iconify-icon icon="solar:star-bold-duotone" style="opacity:1;"></iconify-icon>
+                            <iconify-icon icon="solar:star-bold-duotone" style="opacity:1;"></iconify-icon>
+                        </div>
+                    </div>
+
+                    <p class="italic">18 Jan 2026, 19:27 WIB</p>
+
+                </div>
+            </div>
+            <!-- CARD -->
+            <div class="bg-[#ffffff99] backdrop-blur-xl rounded-2xl p-4 shadow border">
+
+                <div class="flex items-center gap-3 mb-3">
+                    <img src="https://perakmurni.com/upload/user/17679782616nQ.png"
+                        class="w-12 h-12 rounded-full border shadow">
+                    <div>
+                        <p class="text-xs text-gray-500">Nama: <span class="font-bold text-[#1a1a1a]">Aep badra</span>
+                        </p>
+                        <p class="text-xs text-gray-500">Nomor: <span class="font-bold">87*******67</span></p>
+                    </div>
+                </div>
+
+                <img src="https://perakmurni.com/upload/proof/1768735660nJ5.jpg" onclick="openImage(this.src)"
+                    class="rounded-xl w-full h-48 object-cover cursor-pointer shadow">
+
+                <p class="text-xs text-gray-500 mt-3 font-semibold">Komentar:</p>
+                <div class="bg-white/70 shadow-sm rounded-xl p-3 text-sm mt-1">
+                    Sat set yes
+                </div>
+
+                <div class="flex justify-between items-center mt-3 pt-2 text-xs text-gray-500">
+
+                    <div>
+                        <p class="font-semibold">Rating Pengguna</p>
+                        <div class="flex mt-1 text-red-700 text-lg">
+                            <iconify-icon icon="solar:star-bold-duotone" style="opacity:1;"></iconify-icon>
+                            <iconify-icon icon="solar:star-bold-duotone" style="opacity:1;"></iconify-icon>
+                            <iconify-icon icon="solar:star-bold-duotone" style="opacity:1;"></iconify-icon>
+                            <iconify-icon icon="solar:star-bold-duotone" style="opacity:1;"></iconify-icon>
+                            <iconify-icon icon="solar:star-bold-duotone" style="opacity:1;"></iconify-icon>
+                        </div>
+                    </div>
+
+                    <p class="italic">18 Jan 2026, 19:27 WIB</p>
+
+                </div>
+            </div>
+            <!-- CARD -->
+            <div class="bg-[#ffffff99] backdrop-blur-xl rounded-2xl p-4 shadow border">
+
+                <div class="flex items-center gap-3 mb-3">
+                    <img src="https://perakmurni.com/upload/user/17679782616nQ.png"
+                        class="w-12 h-12 rounded-full border shadow">
+                    <div>
+                        <p class="text-xs text-gray-500">Nama: <span class="font-bold text-[#1a1a1a]">Aep badra</span>
+                        </p>
+                        <p class="text-xs text-gray-500">Nomor: <span class="font-bold">87*******67</span></p>
+                    </div>
+                </div>
+
+                <img src="https://perakmurni.com/upload/proof/1768735660nJ5.jpg" onclick="openImage(this.src)"
+                    class="rounded-xl w-full h-48 object-cover cursor-pointer shadow">
+
+                <p class="text-xs text-gray-500 mt-3 font-semibold">Komentar:</p>
+                <div class="bg-white/70 shadow-sm rounded-xl p-3 text-sm mt-1">
+                    Sat set yes
+                </div>
+
+                <div class="flex justify-between items-center mt-3 pt-2 text-xs text-gray-500">
+
+                    <div>
+                        <p class="font-semibold">Rating Pengguna</p>
+                        <div class="flex mt-1 text-red-700 text-lg">
+                            <iconify-icon icon="solar:star-bold-duotone" style="opacity:1;"></iconify-icon>
+                            <iconify-icon icon="solar:star-bold-duotone" style="opacity:1;"></iconify-icon>
+                            <iconify-icon icon="solar:star-bold-duotone" style="opacity:1;"></iconify-icon>
+                            <iconify-icon icon="solar:star-bold-duotone" style="opacity:1;"></iconify-icon>
+                            <iconify-icon icon="solar:star-bold-duotone" style="opacity:1;"></iconify-icon>
+                        </div>
+                    </div>
+
+                    <p class="italic">18 Jan 2026, 19:27 WIB</p>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- FLOATING BUTTON -->
+        <a href="https://perakmurni.com/forum/submit"
+            class="fixed bottom-24 right-6 bg-gradient-to-r from-red-800 to-red-600 w-14 h-14 rounded-full shadow-xl flex items-center justify-center text-white text-2xl">
+            <iconify-icon icon="solar:camera-add-bold-duotone"></iconify-icon>
+            <p
+                class="absolute bottom-[60px] right-0 bg-black/70 text-white px-3 rounded-full text-[12px] whitespace-nowrap">
+                Kirim Bukti Penarikan</p>
+        </a>
+
+    </div>
+
+    <!-- IMAGE MODAL -->
+    <div id="imageModal" onclick="closeImage()"
+        class="fixed inset-0 hidden bg-black/80 flex items-center justify-center z-50">
+
+        <img id="modalImage" class="max-w-[95%] max-h-[90vh] rounded-xl shadow-xl">
+
+    </div>
+
+    <script>
+        function openImage(src) {
+            document.getElementById('modalImage').src = src
+            document.getElementById('imageModal').classList.remove('hidden')
+        }
+
+        function closeImage() {
+            document.getElementById('imageModal').classList.add('hidden')
+        }
+    </script>
+
+</body>
+
+</html>
