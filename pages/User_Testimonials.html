@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/styles/styles.css">
-    <title>Invesperia</title>
+    <title>Invesperia</title> 
+    <style>
+        .topCardBg {
+            background: url(/images/bgForum.avif);   
+        }
+    </style>
 </head>
 
 <body class="bg-[#F4F4F4]">
@@ -23,13 +28,13 @@
         <!-- TESTIMONIAL LIST -->
         <div class="space-y-4 mt-4">
             <!-- CARD -->
-            <div class="bg-[#ffffff99] backdrop-blur-xl rounded-2xl p-4 shadow">
-                <div class="flex items-center gap-3">
+            <div class="backdrop-blur-xl rounded-2xl p-4 shadow topCardBg"> 
+                <div class="flex items-center gap-3 ">
                     <img src="/images/Ellipse2.png" class="w-12 h-12 rounded-full border shadow">
                     <div>
                         <div>
-                            <p class="text-[18px] text-[#1C1C1C] font-medium">Ronald Richards</p>
-                            <p class="text-sm text-[#5F6B66]">ID: 8123456</p>
+                            <p class="text-[18px] text-white font-medium">Ronald Richards</p>
+                            <p class="text-sm text-green-300">ID: 8123456</p>
                         </div>
                     </div>
                 </div>
@@ -41,10 +46,10 @@
                         <img src="/images/icons/material-symbols_star.png" alt="">
                         <img src="/images/icons/material-symbols_star.png" alt="">
                     </div>
-                    <p class="text-[#5F6B66] text-sm">18 Jan 2026, 19:27 WIB</p>
+                    <p class="text-white text-sm">18 Jan 2026, 19:27 WIB</p>
                 </div>
 
-                <p class="text-[17px] text-[#5F6B66] mb-3">
+                <p class="text-[17px] bg-white/70 p-2 rounded-lg text-[#5F6B66] mb-3">
                     I’m happy to share that I have successfully received my withdrawal payment without any issues. The
                     process was smooth, fast, and completely transparent.
                 </p>
@@ -57,43 +62,7 @@
                         <img class="h-full" onclick="openImage(this.src)" src="/images/image120(1).png" alt="">
                     </div>
                 </div>
-            </div>
-            <!-- CARD -->
-            <div class="bg-[#ffffff99] backdrop-blur-xl rounded-2xl p-4 shadow">
-                <div class="flex items-center gap-3">
-                    <img src="/images/Ellipse2.png" class="w-12 h-12 rounded-full border shadow">
-                    <div>
-                        <div>
-                            <p class="text-[18px] text-[#1C1C1C] font-medium">Ronald Richards</p>
-                            <p class="text-sm text-[#5F6B66]">ID: 8123456</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex items-center justify-between my-3">
-                    <div class="flex text-yellow-500 text-lg">
-                        <img src="/images/icons/material-symbols_star.png" alt="">
-                        <img src="/images/icons/material-symbols_star.png" alt="">
-                        <img src="/images/icons/material-symbols_star.png" alt="">
-                        <img src="/images/icons/material-symbols_star.png" alt="">
-                        <img src="/images/icons/material-symbols_star.png" alt="">
-                    </div>
-                    <p class="text-[#5F6B66] text-sm">18 Jan 2026, 19:27 WIB</p>
-                </div>
-
-                <p class="text-[17px] text-[#5F6B66] mb-3">
-                    I’m happy to share that I have successfully received my withdrawal payment without any issues. The
-                    process was smooth, fast, and completely transparent.
-                </p>
-
-                <div class=" overflow-hidden grid grid-cols-2 gap-3">
-                    <div class="h-[167px] rounded-xl overflow-hidden">
-                        <img class="h-full" onclick="openImage(this.src)" src="/images/image120.png" alt="">
-                    </div>
-                    <div class="h-[167px] rounded-xl overflow-hidden">
-                        <img class="h-full" onclick="openImage(this.src)" src="/images/image120(1).png" alt="">
-                    </div>
-                </div>
-            </div>
+            </div> 
         </div>
     </div>
 
