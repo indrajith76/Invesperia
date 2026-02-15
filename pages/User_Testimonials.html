@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <title>Invesperia</title>
+</head>
+
+<body class="bg-[#F4F4F4]">
+    <!-- TOP BAR -->
+    <header class="relative bg-white border-b border-gray-300">
+        <a class="absolute left-4 top-0 bottom-0 my-auto flex items-center" href="/pages/Team.html">
+            <img src="/images/icons/rightArrowWithCircle.png" alt="">
+        </a>
+        <h4 class="text-[20px] text-center py-5">Add Bank Account</h4>
+    </header>
+
+    <div class="max-w-[480px] mx-auto min-h-screen p-3 pb-28">
+
+        <!-- TESTIMONIAL LIST -->
+        <div class="space-y-4 mt-4">
+            <!-- CARD -->
+            <div class="bg-[#ffffff99] backdrop-blur-xl rounded-2xl p-4 shadow">
+                <div class="flex items-center gap-3">
+                    <img src="/images/Ellipse2.png" class="w-12 h-12 rounded-full border shadow">
+                    <div>
+                        <div>
+                            <p class="text-[18px] text-[#1C1C1C] font-medium">Ronald Richards</p>
+                            <p class="text-sm text-[#5F6B66]">ID: 8123456</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center justify-between my-3">
+                    <div class="flex text-yellow-500 text-lg">
+                        <img src="/images/icons/material-symbols_star.png" alt="">
+                        <img src="/images/icons/material-symbols_star.png" alt="">
+                        <img src="/images/icons/material-symbols_star.png" alt="">
+                        <img src="/images/icons/material-symbols_star.png" alt="">
+                        <img src="/images/icons/material-symbols_star.png" alt="">
+                    </div>
+                    <p class="text-[#5F6B66] text-sm">18 Jan 2026, 19:27 WIB</p>
+                </div>
+
+                <p class="text-[17px] text-[#5F6B66] mb-3">
+                    I’m happy to share that I have successfully received my withdrawal payment without any issues. The
+                    process was smooth, fast, and completely transparent.
+                </p>
+
+                <div class=" overflow-hidden grid grid-cols-2 gap-3">
+                    <div class="h-[167px] rounded-xl overflow-hidden">
+                        <img class="h-full" onclick="openImage(this.src)" src="/images/image120.png" alt="">
+                    </div>
+                    <div class="h-[167px] rounded-xl overflow-hidden">
+                        <img class="h-full" onclick="openImage(this.src)" src="/images/image120(1).png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- CARD -->
+            <div class="bg-[#ffffff99] backdrop-blur-xl rounded-2xl p-4 shadow">
+                <div class="flex items-center gap-3">
+                    <img src="/images/Ellipse2.png" class="w-12 h-12 rounded-full border shadow">
+                    <div>
+                        <div>
+                            <p class="text-[18px] text-[#1C1C1C] font-medium">Ronald Richards</p>
+                            <p class="text-sm text-[#5F6B66]">ID: 8123456</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center justify-between my-3">
+                    <div class="flex text-yellow-500 text-lg">
+                        <img src="/images/icons/material-symbols_star.png" alt="">
+                        <img src="/images/icons/material-symbols_star.png" alt="">
+                        <img src="/images/icons/material-symbols_star.png" alt="">
+                        <img src="/images/icons/material-symbols_star.png" alt="">
+                        <img src="/images/icons/material-symbols_star.png" alt="">
+                    </div>
+                    <p class="text-[#5F6B66] text-sm">18 Jan 2026, 19:27 WIB</p>
+                </div>
+
+                <p class="text-[17px] text-[#5F6B66] mb-3">
+                    I’m happy to share that I have successfully received my withdrawal payment without any issues. The
+                    process was smooth, fast, and completely transparent.
+                </p>
+
+                <div class=" overflow-hidden grid grid-cols-2 gap-3">
+                    <div class="h-[167px] rounded-xl overflow-hidden">
+                        <img class="h-full" onclick="openImage(this.src)" src="/images/image120.png" alt="">
+                    </div>
+                    <div class="h-[167px] rounded-xl overflow-hidden">
+                        <img class="h-full" onclick="openImage(this.src)" src="/images/image120(1).png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- bottom btn -->
+    <div class="bg-[#e7e7e7] fixed bottom-0 w-full h-auto px-4 py-4 flex items-center justify-center">
+        <button class="btnGreenBG w-full py-[18px] rounded-[30px]">
+            Submit Proof of Withdrawal
+        </button>
+    </div>
+
+    <!-- IMAGE MODAL -->
+    <div id="imageModal" class="fixed inset-0 hidden bg-black/80 flex items-center justify-center flex-col z-50">
+
+        <img id="modalImage" class="max-w-[95%] max-h-[90vh] rounded-xl shadow-xl">
+
+        <img onclick="closeImage()" class="w-11" src="/images/icons/x-circle.png" alt="">
+    </div>
+
+    <script>
+        function openImage(src) {
+            document.getElementById('modalImage').src = src
+            document.getElementById('imageModal').classList.remove('hidden')
+        }
+
+        function closeImage() {
+            document.getElementById('imageModal').classList.add('hidden')
+        }
+    </script>
+
+</body>
+
+</html>
